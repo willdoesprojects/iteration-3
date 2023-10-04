@@ -1,0 +1,73 @@
+body {
+    background-color: #352F2F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C1919;
+    overflow: hidden;
+    height: 50px;
+
+}
+
+main {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 0fr 0fr;
+    align-self: stretch;
+    justify-self: center;
+
+}
+
+nav {
+    color: white;
+}
+
+section {
+    
+}
+.btn button {
+    width: 318px;
+    height: 74px;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    background-color: #2C1919;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #603737;
+    border: solid 1pt black;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li {
+    flex-basis: 3.9em;
+    text-align: right;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.song img {
+    width: 360px;
+    height: 287px;
+}
