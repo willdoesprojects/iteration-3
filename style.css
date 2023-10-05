@@ -127,6 +127,8 @@ div {
     grid-template-rows: repeat(3, 1fr);
     height: 80%;
     width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 .song-queue article, .dj-queue article   {
@@ -136,6 +138,8 @@ div {
     flex-basis: 1px;
     color: white;
     margin: 0;
+    align-self: center;
+    justify-self: center;
 }
 
 .song-queue article > *, .dj-queue article > * {
