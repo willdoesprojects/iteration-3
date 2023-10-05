@@ -64,9 +64,37 @@
             .sect-2 input:focus {
                 outline: none;
                 border: 3pt solid #2C1919;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
+            .sect-3 dialog {
+                margin-top: 50px;
+                border-radius: 15px;
+                background-color: #603737;
+                color: white;
+            }
 
+            .sect-3 form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sect-3 button {
+                border-radius: 20px;
+                width: 80px;
+                height: 40px;
+                border: none;
+                cursor: pointer;
+                background-color: #685050;
+                color: white;
+            }
+
+            .sect-3 button:hover {
+                border: solid 1pt black;
+            }
             
         </style>
     </head>
@@ -106,6 +134,15 @@
 
             <section style="display: flex; justify-content: center; align-items: center; margin-top: 150px;" class="sect-2">
                 <input type="search" placeholder="Search Song or DJ">
+            </section>
+
+            <section class="sect-3">
+                <dialog open>
+                    <p>Thank you for choosing Lofi-Station!</p>
+                    <form method="dialog">
+                        <button>Thanks!</button>
+                      </form>
+                </dialog>
             </section>
         </main>
     </body>

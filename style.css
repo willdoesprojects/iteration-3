@@ -89,6 +89,12 @@ section button:hover {
 
 }
 
+.current-song figure{
+    margin: 0;
+    padding: 0;
+    text-decoration: italic;
+}
+
 .current-song h1 {
     margin: 0;
     font-size: 60px;
