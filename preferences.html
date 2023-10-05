@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <title>Listner's Page</title>
+        <link rel="stylesheet" href="./preferences.css" />
+        <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+        <style>
+            header { 
+                background-color: #2C1919;
+                overflow: hidden;
+                height: 60px;
+            }
+
+            
+            nav img {
+                height: 40px;
+                width: 40px;
+                border-radius: 20px;
+            }
+
+            .sect-1 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 30px;
+            }
+            
+            .sect-1 h1 {
+                font-size: 50px;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+
+            .sect-1 select {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .sect-1 button {
+                width: 350px;
+                height: 75px;
+                font-size: 48px;
+                font-weight: 800;
+                color: white;
+                background-color: #2C1919;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .sect-1 button:hover {
+                background-color: #603737;
+                border: solid 1pt black;
+            }
+
+            .sect-2 input{
+                width: 80%;
+                height: 6vh;
+                border-radius: 15px;
+                border: none;
+            }
+
+            .sect-2 input:focus {
+                outline: none;
+                border: 3pt solid #2C1919;
+            }
+
+
+            
+        </style>
+    </head>
+    <body style = "background-color: #352F2F; margin: 0; padding: 0; font-family: Assistant; color: white;">
+        <header>
+            <nav>
+                <ul style = "margin-left: 10px;  margin-top: 5px; margin-right: 10px; padding: 0;  display: flex; list-style: none; justify-content: space-between; align-items: center;">
+                    <li><a href = "./"><img src = "./back_button.png" alt = "back-button"></a></li>
+                    <li style="color: white; font-size: 40px;">Preferences</li>
+                    <li><a href="#"><img src = "https://media.licdn.com/dms/image/D4E35AQE65Z3De7tXaw/profile-framedphoto-shrink_100_100/0/1677099755237?e=1697079600&v=beta&t=QyGt7zkFgdnimc6cIB7wirJYR3SieyvSWNwvfeunX58"
+                        alt = "profile-picture" /></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="sect-1">
+                <article class="btn-1">
+                    <button type="submit">Liked Songs</button>
+                </article>
+
+                <article class="mood">
+                    <h1>Mood</h1>
+                    <select name="Mood">
+                        <option selected>Mixed</option>
+                        <option>Happy</option>
+                        <option>Upbeat</option>
+                        <option>Productive</option>
+                        <option>Moody</option>
+                    </select>
+                </article>  
+                
+                <article class="btn-2">
+                    <button>Liked DJs</button>
+                </article>
+            </section>
+
+            <section style="display: flex; justify-content: center; align-items: center; margin-top: 150px;" class="sect-2">
+                <input type="search" placeholder="Search Song or DJ">
+            </section>
+        </main>
+    </body>
+
+
+</html>

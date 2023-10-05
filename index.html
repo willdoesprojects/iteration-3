@@ -4,35 +4,146 @@
         <meta charset="utf-8" />
         <title>Listner's Page</title>
         <link rel="stylesheet" href="./style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
     </head>
 
     <body>
         <header>
             <nav class="navbar">
-                
                 <ul>
-                    <li class="logo">Logo</li>
-                    <li>About Us</li>
-                    <li>Profile</li>
+                    <li><a href="./">Lofi-Station</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#"><img src = "https://media.licdn.com/dms/image/D4E35AQE65Z3De7tXaw/profile-framedphoto-shrink_100_100/0/1677099755237?e=1697079600&v=beta&t=QyGt7zkFgdnimc6cIB7wirJYR3SieyvSWNwvfeunX58"
+                    alt = "profile-picture" /></a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <section class="btn">
-                <button type = "submit">Preferences</button>    
+               <a href="./preferences.html"><button type = "submit">Preferences</button></a> 
             </section>
 
-            <section class="stuff">2</section>
-
-            <section class="song">
+            <section class="current-song">
                 <img src="./album_cover.webp" alt="album-cover"/>
-                <h1>Driver</h1>
-                <h2>Take Care</h2>
+                <h1>I feel it</h1>
+                <h2>Saint Luna</h2>
             </section>
 
-            <section>3</section>
-            <section>4</section>
+            <section class="song-queue">
+                <h1>Song Queue</h1>
+                <div class="grid-1">
+                <article>
+                    <p1>1</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+
+                <article>
+                    <p1>2</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+
+                <article>
+                    <p1>3</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <article>
+                    <p1>4</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <article>
+                    <p1>5</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <article>
+                    <p1>6</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <!-- <article>
+                    <p1>7</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <article>
+                    <p1>8</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article>
+                <article>
+                    <p1>9</p1>
+                    <img src="./song1.jpeg" alt="album-cover"/>
+                    <p1>Song</p1>
+                </article> -->
+            </div>
+            </section>
+
+            <section class="dj-queue">
+                <h1>Song Queue</h1>
+                <div class="grid-2">
+                <article>
+                    <p1>1</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+
+                <article>
+                    <p1>2</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+
+                <article>
+                    <p1>3</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <article>
+                    <p1>4</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <article>
+                    <p1>5</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <article>
+                    <p1>6</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <!-- <article>
+                    <p1>7</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <article>
+                    <p1>8</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article>
+                <article>
+                    <p1>9</p1>
+                    <img src="./dj.jpeg" alt="album-cover"/>
+                    <p1>DJ</p1>
+                </article> -->
+               
+            </div>
+            </section>
+            
+            <section class="audio-player">
+                <audio controls src = ./song.mp3>
+
+                </audio>
+            </section>
+            
+            
         </main>
     </body>
 </html>
