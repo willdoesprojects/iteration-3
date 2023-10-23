@@ -5,6 +5,8 @@
         <title>Listner's Page</title>
         <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
         <style>
+
+
             header { 
                 background-color: #2C1919;
                 overflow: hidden;
@@ -36,7 +38,19 @@
                 padding-right: 20px;
             }
 
-            .sect-1 button {
+            .btn-1 {
+                width: 350px;
+                height: 75px;
+                font-size: 48px;
+                font-weight: 800;
+                color: white;
+                background-color: #2C1919;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btn-2 {
                 width: 350px;
                 height: 75px;
                 font-size: 48px;
@@ -94,8 +108,107 @@
             .sect-3 button:hover {
                 border: solid 1pt black;
             }
+
+            .search-results {
+                display: flex;
+                justify-content: center;
+            }
+            .results {
+                list-style: none;
+                padding: 0;
+                margin: 2px;
+                border-radius: 15px;
+                
+                color: black;
+                width: 80%;
+            }
+
+            .results li {
+                padding-left: 10px;
+                background-color: white;
+                border: solid 1pt black;
+                border-radius: 15px;
+                height: 30px;
+            }
+
+            .modal-songs, .modal-djs {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 450px;
+                min-height: 250px;
+                position: absolute;
+                z-index: 2;
+                top: 20%;
+                background-color: #2C1919;
+                border: 3px solid black;
+                border-radius: 15px;
+                color: white;
+            }
             
+            .close-button {
+                display: flex;
+                justify-content: flex-end;
+                padding: 5px;
+            }
+
+            .btn-close {
+                border: none;
+                border-radius: 30%;
+            }
+            
+            .overlay-1, .overlay-2 {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(3px);
+                z-index: 1;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .results li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .results li button {
+                border-radius: 15px;
+                margin-right: 8px;
+                border: 2px solid black;
+            }
+
+            .results li button:hover {
+                background-color: green;
+            }
+
+            .liked-songs li {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .liked-songs li button {
+                border-radius: 15px;
+                margin-right: 8px;
+                border: 2px solid black;
+            }
+
+            .liked-songs li button:hover {
+                background-color: red;
+            }
+
         </style>
+        
     </head>
     <body style = "background-color: #352F2F; margin: 0; padding: 0; font-family: Assistant; color: white;">
         <header>
@@ -110,9 +223,20 @@
         </header>
 
         <main>
+            
+
             <section class="sect-1">
+                <article class="modal-songs hidden">
+                    <div class="close-button">
+                        <button class="btn-close">⨉</button>
+                    </div>
+                    <ul class="liked-songs">
+                        
+                    </ul>
+                </article>
+                <div class="overlay-1 hidden"></div>
                 <article class="btn-1">
-                    <button type="submit">Liked Songs</button>
+                    <button class = "btn-1" type="submit">Liked Songs</button>
                 </article>
 
                 <article class="mood">
@@ -126,15 +250,29 @@
                     </select>
                 </article>  
                 
+                <article class="modal-djs hidden">
+                    <div class="close-button">
+                        <button class="btn-close">⨉</button>
+                    </div>
+                    <ul class="liked-djs">
+                        
+                    </ul>
+                </article>
+                <div class="overlay-2 hidden"></div>
                 <article class="btn-2">
-                    <button>Liked DJs</button>
+                    <button class = "btn-2" type="submit">Liked DJs</button>
                 </article>
             </section>
 
             <section style="display: flex; justify-content: center; align-items: center; margin-top: 150px;" class="sect-2">
-                <input type="search" placeholder="Search Song or DJ">
+                <input type="search" id="searchInput" placeholder="Search Song or DJ" onkeyup="search_bar()">
             </section>
+            <section class="search-results">
+                <ul class="results">
 
+                </ul>
+            </section>
+            <script src="preferences_script.js"></script>
             <section class="sect-3">
                 <dialog open>
                     <p>Thank you for choosing Lofi-Station!</p>
